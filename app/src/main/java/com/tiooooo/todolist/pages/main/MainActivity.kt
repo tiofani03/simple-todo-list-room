@@ -35,8 +35,8 @@ class MainActivity : AppCompatActivity() {
                 val isEdit = result.data?.getBooleanExtra(EXTRA_EDIT, false) ?: false
                 val text = result.data?.getStringExtra(EXTRA_MESSAGE) ?: ""
 
-                val showMessage = if (isEdit) "$text Berhasil dihapus"
-                else "$text berhasil diedit"
+                val showMessage = if (isEdit) "$text Berhasil diedit"
+                else "$text berhasil dihapus"
 
                 Toast.makeText(this, showMessage, Toast.LENGTH_SHORT).show()
             }

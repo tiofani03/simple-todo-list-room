@@ -68,7 +68,7 @@ class AddTodoActivity : AppCompatActivity() {
 
                 val desc = edtText.text.toString()
                 val note = Todo(
-                    description = desc, date = DateHelper.getCurrentDate()
+                    id = id, description = desc, date = DateHelper.getCurrentDate()
                 )
                 if (isEdit) {
                     addTodoViewModel.update(note)
